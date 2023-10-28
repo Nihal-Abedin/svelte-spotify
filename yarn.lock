@@ -353,6 +353,11 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.4.tgz#0a41252ad431c473158b22f9bfb9a63df7541cff"
   integrity sha512-MMzuxN3GdFwskAnb6fz0orFvhfqi752yjaXylr0Rp4oDg5H0Zn1IuyRhDVvYOwAXoJirx2xuS16I3WjxnAIHiQ==
 
+"@types/spotify-api@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@types/spotify-api/-/spotify-api-0.0.24.tgz#93dd61cfa05f29cf6f3f284668ef764cad2aff3e"
+  integrity sha512-IoP1PHaH25qN83hTSQM+Y2YwWnus6P/kVB/Q/I1LMSM5NCY+IHF2/h4q5btsIbgJRoVUJ7pwhL1U6wagYeR5Og==
+
 "@typescript-eslint/eslint-plugin@^6.0.0":
   version "6.9.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.9.0.tgz#fdb6f3821c0167e3356e9d89c80e8230b2e401f4"
@@ -1460,6 +1465,11 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
+
+pkce-gen@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/pkce-gen/-/pkce-gen-1.1.0.tgz#060f32400f445bb432c4069b21f0c29eb7e9cac0"
+  integrity sha512-pCXX7hcHBW4Cqvu8bSN/5+NLDNOg61VqiK9/1JSfppUHyTPuaNmZo8T8tydj0/AVlaDQpAB9+6iwCOT6yI7xsQ==
 
 pkg-types@^1.0.3:
   version "1.0.3"

@@ -26,6 +26,10 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const SPOTIFY_APP_CLIENT_ID: string;
+	export const SPOTIFY_APP_CLIENT_SECRET: string;
+	export const SPOTIFY_BASE_URL: string;
+	export const BASE_URL: string;
 	export const LESSOPEN: string;
 	export const npm_package_devDependencies_vitest: string;
 	export const USER: string;
@@ -53,6 +57,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_eslint_plugin_svelte: string;
 	export const npm_package_devDependencies_eslint_config_prettier: string;
 	export const GTK_IM_MODULE_FILE: string;
+	export const npm_package_devDependencies_svelte_preprocess: string;
 	export const npm_config_init_license: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GTK_MODULES: string;
@@ -73,6 +78,7 @@ declare module '$env/static/private' {
 	export const npm_package_readmeFilename: string;
 	export const IM_CONFIG_PHASE: string;
 	export const WAYLAND_DISPLAY: string;
+	export const npm_package_dependencies__types_spotify_api: string;
 	export const npm_package_devDependencies_prettier: string;
 	export const npm_package_devDependencies__playwright_test: string;
 	export const npm_package_scripts_dev: string;
@@ -130,6 +136,8 @@ declare module '$env/static/private' {
 	export const SHELL: string;
 	export const LC_NAME: string;
 	export const npm_lifecycle_event: string;
+	export const npm_package_dependencies_pkce_gen: string;
+	export const npm_package_dependencies__fontsource_metropolis: string;
 	export const npm_package_version: string;
 	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
@@ -161,6 +169,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
 	export const npm_package_scripts_preview: string;
 	export const VTE_VERSION: string;
+	export const npm_package_dependencies__unsass_breakpoint: string;
 	export const INIT_CWD: string;
 	export const NODE_ENV: string;
 }
@@ -192,6 +201,10 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		SPOTIFY_APP_CLIENT_ID: string;
+		SPOTIFY_APP_CLIENT_SECRET: string;
+		SPOTIFY_BASE_URL: string;
+		BASE_URL: string;
 		LESSOPEN: string;
 		npm_package_devDependencies_vitest: string;
 		USER: string;
@@ -219,6 +232,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_eslint_plugin_svelte: string;
 		npm_package_devDependencies_eslint_config_prettier: string;
 		GTK_IM_MODULE_FILE: string;
+		npm_package_devDependencies_svelte_preprocess: string;
 		npm_config_init_license: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		GTK_MODULES: string;
@@ -239,6 +253,7 @@ declare module '$env/dynamic/private' {
 		npm_package_readmeFilename: string;
 		IM_CONFIG_PHASE: string;
 		WAYLAND_DISPLAY: string;
+		npm_package_dependencies__types_spotify_api: string;
 		npm_package_devDependencies_prettier: string;
 		npm_package_devDependencies__playwright_test: string;
 		npm_package_scripts_dev: string;
@@ -296,6 +311,8 @@ declare module '$env/dynamic/private' {
 		SHELL: string;
 		LC_NAME: string;
 		npm_lifecycle_event: string;
+		npm_package_dependencies_pkce_gen: string;
+		npm_package_dependencies__fontsource_metropolis: string;
 		npm_package_version: string;
 		QT_ACCESSIBILITY: string;
 		GDMSESSION: string;
@@ -327,6 +344,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_prettier_plugin_svelte: string;
 		npm_package_scripts_preview: string;
 		VTE_VERSION: string;
+		npm_package_dependencies__unsass_breakpoint: string;
 		INIT_CWD: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
