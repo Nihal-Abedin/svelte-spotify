@@ -1,10 +1,15 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import logo from "$assests/Spotify_Logo_RGB_White.png";
-  import { Home, Search, ListMusic } from "lucide-svelte";
+  import { Home, Search, ListMusic, Menu, X } from "lucide-svelte";
   import type { ComponentType } from "svelte";
+  import { fade } from "svelte/transition";
+  import IconButton from "./IconButton.svelte";
 
   export let desktop: boolean;
+
+  let isMobileMenuOpen = false;
+  $: isOpen = desktop || isMobileMenuOpen;
 
   const menuItems: { path: string; label: string; icon: ComponentType }[] = [
     {
@@ -28,11 +33,48 @@
       icon: Home,
     },
   ];
+
+  const openMenu = () => {
+    isMobileMenuOpen = true;
+  };
+  const closeMenu = () => {
+    isMobileMenuOpen = false;
+  };
 </script>
 
+<svelte:head>
+  {#if isMobileMenuOpen && !desktop}
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
 <div class="nav-content" class:desktop class:mobile={!desktop}>
+  {#if !desktop && isMobileMenuOpen}
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div
+      class="overlay"
+      on:click={closeMenu}
+      transition:fade={{ duration: 200 }}
+    />
+  {/if}
   <nav aria-label="Main">
-    <div class="nav-content-inner">
+    {#if !desktop}
+      <IconButton icon={Menu} on:click={openMenu} label="open-menu" />
+    {/if}
+    <div class="nav-content-inner" class:is-hidden={!isOpen}>
+      {#if !desktop}
+        <IconButton
+          icon={X}
+          on:click={closeMenu}
+          label="open-menu"
+          class="close-menu-button"
+        />
+      {/if}
       <img src={logo} class="logo" alt="logo" />
       <ul>
         {#each menuItems as item}
@@ -56,6 +98,19 @@
 
 <style lang="scss">
   .nav-content {
+    .overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: var(--sidebar-color);
+      opacity: 0.75;
+      z-index: 100;
+      @include breakpoint.up("md") {
+        display: none;
+      }
+    }
     .logo {
       max-width: 100%;
       width: 130px;
@@ -107,6 +162,29 @@
           display: block;
         }
       }
+    }
+    &.mobile .nav-content-inner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      transition: transform 200ms, opacity 200ms;
+      &.is-hidden {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      @include breakpoint.down("md") {
+        display: block;
+      }
+    }
+    :global(.menu-button) {
+      @include breakpoint.up("md") {
+        display: none;
+      }
+    }
+    :global(.close-menu-button) {
+      position: absolute;
+      right: 20px;
     }
   }
 </style>

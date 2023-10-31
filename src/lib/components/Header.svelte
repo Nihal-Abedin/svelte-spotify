@@ -1,4 +1,19 @@
-<script lang="ts">
+<script>
+  import Navigation from "$components/Navigation.svelte";
 </script>
 
-Header
+<div class="content">
+  <div class="left">
+    <Navigation desktop={false} />
+  </div>
+  <div class="right">Right</div>
+</div>
+
+<style lang="scss">
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+</style>
