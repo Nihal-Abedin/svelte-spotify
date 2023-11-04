@@ -26,7 +26,6 @@
   export let data: LayoutData;
   $: user = data.user;
 
-  $: console.log(topbar && topbar.offsetHeight, scrollY);
 
   beforeNavigate(()=>{
     NProgress.start();
