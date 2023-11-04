@@ -27,11 +27,6 @@
       label: "Playlists",
       icon: ListMusic,
     },
-    {
-      path: "/",
-      label: "Home",
-      icon: Home,
-    },
   ];
 
   const openMenu = () => {
@@ -64,7 +59,7 @@
   {/if}
   <nav aria-label="Main">
     {#if !desktop}
-      <IconButton icon={Menu} on:click={openMenu} label="open-menu" />
+      <IconButton icon={Menu} on:click={openMenu} label="open-menu" class="menu-button"/>
     {/if}
     <div class="nav-content-inner" class:is-hidden={!isOpen}>
       {#if !desktop}

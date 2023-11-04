@@ -1,5 +1,6 @@
 {
 	"/": [
+		"src/routes/+page.ts",
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts",
 		"src/routes/+layout.ts",
@@ -17,7 +18,19 @@
 	"/api/auth/refresh": [
 		"src/routes/api/auth/refresh/+server.ts"
 	],
+	"/api/spotify/[...path]": [
+		"src/routes/api/spotify/[...path]/+server.ts"
+	],
 	"/login": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/profile": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/search": [
+		"src/routes/search/+page.ts",
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts"
 	]
