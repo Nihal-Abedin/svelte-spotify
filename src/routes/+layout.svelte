@@ -1,9 +1,16 @@
 <script lang="ts">
+	import { page } from '$app/stores';
   import "modern-normalize/modern-normalize.css";
   import "../styles/main.scss";
   import type { LayoutData } from "./$types";
   import Navigation from "$components/Navigation.svelte";
   import Header from "$components/Header.svelte";
+  import NProgress from 'nprogress';
+  import 'nprogress/nprogress.css';
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
+  import { hideAll } from 'tippy.js';
+
+  NProgress.configure({showSpinner:false});
 
   let topbar: HTMLElement;
   let scrollY: number;
@@ -20,9 +27,21 @@
   $: user = data.user;
 
   $: console.log(topbar && topbar.offsetHeight, scrollY);
+
+  beforeNavigate(()=>{
+    NProgress.start();
+    hideAll()
+  })
+  afterNavigate(()=>{
+    NProgress.done()
+  })
+
 </script>
 
 <svelte:window bind:scrollY />
+<svelte:head>
+  <title>Spotify{$page.data.title?` - ${$page.data.title}`:``}</title>
+</svelte:head>
 <div id="main">
   {#if user}
     <div id="sidebar">

@@ -38,6 +38,7 @@ declare module '$env/static/private' {
 	export const npm_config_version_commit_hooks: string;
 	export const npm_config_user_agent: string;
 	export const GIO_MODULE_DIR: string;
+	export const npm_package_dependencies_tippy_js: string;
 	export const npm_config_bin_links: string;
 	export const XDG_SESSION_TYPE: string;
 	export const GIT_ASKPASS: string;
@@ -143,6 +144,7 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_event: string;
 	export const npm_package_dependencies_pkce_gen: string;
 	export const npm_package_dependencies__fontsource_metropolis: string;
+	export const npm_package_devDependencies__types_nprogress: string;
 	export const npm_package_version: string;
 	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
@@ -176,6 +178,7 @@ declare module '$env/static/private' {
 	export const npm_package_dependencies_lucide_svelte: string;
 	export const npm_package_dependencies__unsass_breakpoint: string;
 	export const INIT_CWD: string;
+	export const npm_package_dependencies_nprogress: string;
 	export const NODE_ENV: string;
 }
 
@@ -218,6 +221,7 @@ declare module '$env/dynamic/private' {
 		npm_config_version_commit_hooks: string;
 		npm_config_user_agent: string;
 		GIO_MODULE_DIR: string;
+		npm_package_dependencies_tippy_js: string;
 		npm_config_bin_links: string;
 		XDG_SESSION_TYPE: string;
 		GIT_ASKPASS: string;
@@ -323,6 +327,7 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_event: string;
 		npm_package_dependencies_pkce_gen: string;
 		npm_package_dependencies__fontsource_metropolis: string;
+		npm_package_devDependencies__types_nprogress: string;
 		npm_package_version: string;
 		QT_ACCESSIBILITY: string;
 		GDMSESSION: string;
@@ -356,6 +361,7 @@ declare module '$env/dynamic/private' {
 		npm_package_dependencies_lucide_svelte: string;
 		npm_package_dependencies__unsass_breakpoint: string;
 		INIT_CWD: string;
+		npm_package_dependencies_nprogress: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
