@@ -27,11 +27,6 @@
       label: "Playlists",
       icon: ListMusic,
     },
-    {
-      path: "/",
-      label: "Home",
-      icon: Home,
-    },
   ];
 
   const openMenu = () => {

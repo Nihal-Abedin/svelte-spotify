@@ -30,6 +30,7 @@ declare module '$env/static/private' {
 	export const SPOTIFY_APP_CLIENT_SECRET: string;
 	export const SPOTIFY_BASE_URL: string;
 	export const BASE_URL: string;
+	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
 	export const npm_package_devDependencies_vitest: string;
 	export const USER: string;
@@ -57,6 +58,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_eslint_plugin_svelte: string;
 	export const npm_package_devDependencies_eslint_config_prettier: string;
 	export const GTK_IM_MODULE_FILE: string;
+	export const GIO_LAUNCHED_DESKTOP_FILE: string;
 	export const npm_package_devDependencies_svelte_preprocess: string;
 	export const npm_config_init_license: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
@@ -68,11 +70,13 @@ declare module '$env/static/private' {
 	export const npm_config_version_tag_prefix: string;
 	export const LC_MONETARY: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
+	export const MANAGERPID: string;
 	export const npm_package_scripts_check: string;
-	export const DBUS_STARTER_BUS_TYPE: string;
 	export const SYSTEMD_EXEC_PID: string;
+	export const IM_CONFIG_CHECK_ENV: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const COLORTERM: string;
+	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const npm_package_description: string;
 	export const npm_package_devDependencies_typescript: string;
 	export const npm_package_readmeFilename: string;
@@ -84,6 +88,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_dev: string;
 	export const LOGNAME: string;
 	export const npm_package_type: string;
+	export const JOURNAL_STREAM: string;
 	export const _: string;
 	export const npm_package_scripts_check_watch: string;
 	export const npm_package_private: string;
@@ -102,10 +107,11 @@ declare module '$env/static/private' {
 	export const NODE: string;
 	export const SESSION_MANAGER: string;
 	export const GTK_EXE_PREFIX: string;
+	export const INVOCATION_ID: string;
 	export const npm_package_name: string;
 	export const XDG_MENU_PREFIX: string;
 	export const LC_ADDRESS: string;
-	export const GNOME_TERMINAL_SCREEN: string;
+	export const BAMF_DESKTOP_FILE_HINT: string;
 	export const GNOME_SETUP_DISPLAY: string;
 	export const XDG_RUNTIME_DIR: string;
 	export const GDK_BACKEND: string;
@@ -123,7 +129,6 @@ declare module '$env/static/private' {
 	export const XAUTHORITY: string;
 	export const LS_COLORS: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
-	export const GNOME_TERMINAL_SERVICE: string;
 	export const TERM_PROGRAM: string;
 	export const npm_lifecycle_script: string;
 	export const SSH_AGENT_LAUNCHER: string;
@@ -151,6 +156,7 @@ declare module '$env/static/private' {
 	export const LC_MEASUREMENT: string;
 	export const npm_config_version_git_tag: string;
 	export const npm_config_version_git_sign: string;
+	export const GJS_DEBUG_OUTPUT: string;
 	export const LC_IDENTIFICATION: string;
 	export const npm_config_strict_ssl: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -159,7 +165,6 @@ declare module '$env/static/private' {
 	export const PWD: string;
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
-	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_DATA_DIRS: string;
 	export const LC_NUMERIC: string;
 	export const npm_package_devDependencies__sveltejs_adapter_auto: string;
@@ -168,7 +173,6 @@ declare module '$env/static/private' {
 	export const LC_PAPER: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
 	export const npm_package_scripts_preview: string;
-	export const VTE_VERSION: string;
 	export const npm_package_dependencies_lucide_svelte: string;
 	export const npm_package_dependencies__unsass_breakpoint: string;
 	export const INIT_CWD: string;
@@ -206,6 +210,7 @@ declare module '$env/dynamic/private' {
 		SPOTIFY_APP_CLIENT_SECRET: string;
 		SPOTIFY_BASE_URL: string;
 		BASE_URL: string;
+		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
 		npm_package_devDependencies_vitest: string;
 		USER: string;
@@ -233,6 +238,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_eslint_plugin_svelte: string;
 		npm_package_devDependencies_eslint_config_prettier: string;
 		GTK_IM_MODULE_FILE: string;
+		GIO_LAUNCHED_DESKTOP_FILE: string;
 		npm_package_devDependencies_svelte_preprocess: string;
 		npm_config_init_license: string;
 		GNOME_SHELL_SESSION_MODE: string;
@@ -244,11 +250,13 @@ declare module '$env/dynamic/private' {
 		npm_config_version_tag_prefix: string;
 		LC_MONETARY: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
+		MANAGERPID: string;
 		npm_package_scripts_check: string;
-		DBUS_STARTER_BUS_TYPE: string;
 		SYSTEMD_EXEC_PID: string;
+		IM_CONFIG_CHECK_ENV: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		COLORTERM: string;
+		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		npm_package_description: string;
 		npm_package_devDependencies_typescript: string;
 		npm_package_readmeFilename: string;
@@ -260,6 +268,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_dev: string;
 		LOGNAME: string;
 		npm_package_type: string;
+		JOURNAL_STREAM: string;
 		_: string;
 		npm_package_scripts_check_watch: string;
 		npm_package_private: string;
@@ -278,10 +287,11 @@ declare module '$env/dynamic/private' {
 		NODE: string;
 		SESSION_MANAGER: string;
 		GTK_EXE_PREFIX: string;
+		INVOCATION_ID: string;
 		npm_package_name: string;
 		XDG_MENU_PREFIX: string;
 		LC_ADDRESS: string;
-		GNOME_TERMINAL_SCREEN: string;
+		BAMF_DESKTOP_FILE_HINT: string;
 		GNOME_SETUP_DISPLAY: string;
 		XDG_RUNTIME_DIR: string;
 		GDK_BACKEND: string;
@@ -299,7 +309,6 @@ declare module '$env/dynamic/private' {
 		XAUTHORITY: string;
 		LS_COLORS: string;
 		VSCODE_GIT_IPC_HANDLE: string;
-		GNOME_TERMINAL_SERVICE: string;
 		TERM_PROGRAM: string;
 		npm_lifecycle_script: string;
 		SSH_AGENT_LAUNCHER: string;
@@ -327,6 +336,7 @@ declare module '$env/dynamic/private' {
 		LC_MEASUREMENT: string;
 		npm_config_version_git_tag: string;
 		npm_config_version_git_sign: string;
+		GJS_DEBUG_OUTPUT: string;
 		LC_IDENTIFICATION: string;
 		npm_config_strict_ssl: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -335,7 +345,6 @@ declare module '$env/dynamic/private' {
 		PWD: string;
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
-		DBUS_STARTER_ADDRESS: string;
 		XDG_DATA_DIRS: string;
 		LC_NUMERIC: string;
 		npm_package_devDependencies__sveltejs_adapter_auto: string;
@@ -344,7 +353,6 @@ declare module '$env/dynamic/private' {
 		LC_PAPER: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
 		npm_package_scripts_preview: string;
-		VTE_VERSION: string;
 		npm_package_dependencies_lucide_svelte: string;
 		npm_package_dependencies__unsass_breakpoint: string;
 		INIT_CWD: string;
