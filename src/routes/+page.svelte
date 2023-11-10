@@ -1,5 +1,6 @@
 <script lang="ts">
   import Button from "$components/Button.svelte";
+  import Card from "$components/Card.svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -65,8 +66,7 @@
     <div class="grid-items">
       {#each section.items as item}
         <div class="grid-item" style="background-color: black;">
-          <h5>{item.type}</h5>
-          <h3>{item.name}</h3>
+          <Card {item} />
         </div>
       {/each}
     </div>
@@ -74,17 +74,18 @@
 {/each}
 
 <style lang="scss">
-  .content-row {
-    .content-row-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      .section-title {
-        font-size: functions.toRem(22);
-        font-weight: 600;
-        margin: 0;
-      }
-    }
-  }
+	.content-row {
+		margin-bottom: 40px;
+		.content-row-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			.section-title {
+				font-size: functions.toRem(22);
+				font-weight: 600;
+				margin: 0;
+			}
+		}
+	}
 </style>
