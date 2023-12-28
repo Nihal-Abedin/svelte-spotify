@@ -10,7 +10,7 @@ declare global {
 			album?: SpotifyApi.SingleAlbumResponse
 		}
 		// interface Platform {}
-	}
+	} 
 }
 declare interface Window {
 	refreshPromise: Promise<Response> | null;

@@ -6,6 +6,11 @@
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts"
 	],
+	"/album/[id]": [
+		"src/routes/album/[id]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
 	"/api/auth/callback": [
 		"src/routes/api/auth/callback/+server.ts"
 	],

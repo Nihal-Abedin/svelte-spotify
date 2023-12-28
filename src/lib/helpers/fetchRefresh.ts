@@ -4,7 +4,6 @@ import { error } from "@sveltejs/kit";
 export default async function fetchRefresh(fetch: {
     (input: URL | RequestInfo, init?: RequestInit | undefined): Promise<Response>;
 }, path: string) {
-    console.log("FREFRH")
     const req = fetch(path);
 
     if (!browser) return req;
