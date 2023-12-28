@@ -7,10 +7,11 @@ declare global {
 		interface PageData {
 			user: SpotifyApi.CurrentUsersProfileResponse | null;
 			title?: string;
-			album?: SpotifyApi.SingleAlbumResponse
+			album?: SpotifyApi.SingleAlbumResponse;
+			color?:string|null
 		}
 		// interface Platform {}
-	}
+	} 
 }
 declare interface Window {
 	refreshPromise: Promise<Response> | null;

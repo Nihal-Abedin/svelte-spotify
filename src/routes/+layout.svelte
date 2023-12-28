@@ -26,7 +26,6 @@
   export let data: LayoutData;
   $: user = data.user;
 
-  $: console.log(topbar && topbar.offsetHeight, scrollY);
 
   beforeNavigate(()=>{
     NProgress.start();
@@ -53,7 +52,7 @@
       <div id="topbar" bind:this={topbar}>
         <div
           class="topbar-bg"
-          style:background-color="var(--header-color)"
+          style:background-color={$page.data.color?$page.data.color:`var(--header-color)`}
           style:opacity={`${headerOpacity}`}
         />
         <Header />

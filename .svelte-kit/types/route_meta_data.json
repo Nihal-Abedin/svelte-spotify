@@ -6,6 +6,11 @@
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts"
 	],
+	"/album/[id]": [
+		"src/routes/album/[id]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
 	"/api/auth/callback": [
 		"src/routes/api/auth/callback/+server.ts"
 	],
@@ -17,6 +22,9 @@
 	],
 	"/api/auth/refresh": [
 		"src/routes/api/auth/refresh/+server.ts"
+	],
+	"/api/average-color": [
+		"src/routes/api/average-color/+server.ts"
 	],
 	"/api/spotify/[...path]": [
 		"src/routes/api/spotify/[...path]/+server.ts"
