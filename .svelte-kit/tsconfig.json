@@ -19,6 +19,12 @@
 			"$actions/*": [
 				"../src/lib/actions/*"
 			],
+			"$helpers": [
+				"../src/lib/helpers"
+			],
+			"$helpers/*": [
+				"../src/lib/helpers/*"
+			],
 			"$lib": [
 				"../src/lib"
 			],
