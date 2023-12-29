@@ -8,10 +8,11 @@ declare global {
 			user: SpotifyApi.CurrentUsersProfileResponse | null;
 			title?: string;
 			album?: SpotifyApi.SingleAlbumResponse;
-			color?:string|null
+			color?: string | null;
+			playlist?: SpotifyApi.SinglePlaylistResponse
 		}
 		// interface Platform {}
-	} 
+	}
 }
 declare interface Window {
 	refreshPromise: Promise<Response> | null;

@@ -20,7 +20,7 @@ export const options = {
 		app: ({ head, body, assets, nonce, env }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<link rel=\"icon\" href=\"" + assets + "/favicon.png\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t\t" + head + "\n\t</head>\n\t<body data-sveltekit-preload-data=\"hover\">\n\t\t<div style=\"display: contents\">" + body + "</div>\n\t</body>\n</html>\n",
 		error: ({ status, message }) => "<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>" + message + "</title>\n  </head>\n  <body>\n    <h1>An error has occurred!</h1>\n    <p>Status: " + status + "</p>\n    <p>Message: " + message + "</p>\n  </body>\n</html>\n"
 	},
-	version_hash: "66e95g"
+	version_hash: "1wvnd6k"
 };
 
 export function get_hooks() {
