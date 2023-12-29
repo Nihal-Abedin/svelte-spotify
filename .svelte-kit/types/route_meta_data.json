@@ -33,6 +33,11 @@
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts"
 	],
+	"/playlist/[id]": [
+		"src/routes/playlist/[id]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
 	"/profile": [
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts"
